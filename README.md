@@ -3,11 +3,11 @@ Rock Paper Scissors Lizard Spock *python
 
 This is a program to play rock, paper, scissors, lizard, spock (as shown in the TV show "The Big Bang Theory"
 
-TO RUN
+##TO RUN
 =======
-Download/unzip files \n
-Open main.py
+- Download/unzip files
+- Open main.py
 
-TO PLAY
+##TO PLAY
 ========
 Click your choice, and a message box will tell you who won (you, or "player 2")
