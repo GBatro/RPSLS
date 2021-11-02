@@ -1,39 +1,27 @@
-from random import choice 
-from tkinter import *
-import tkinter.messagebox
+from tkinter import Button
+from tkinter import Tk
 from functools import partial
+from RPSLS import options
+from RPSLS import RPSLS
 
-root = Tk()
+class main:
+  root = Tk()
+  root.title("RPSLS")
+  root.minsize(100,130)
+  root.geometry("200x130")
 
-options = [("Rock", 1), ("Paper", 2), ("Scissors", 3), ("Lizard", 4), ("Spock", 5)]
+  runRPSLS = RPSLS.runRPSLS
 
-def winner(player1, player2):
+  rockButton = Button(root, text="Rock", command=partial(runRPSLS,options[0]), bg="grey")
+  paperButton = Button(root, text="Paper", command=partial(runRPSLS,options[1]), bg="white")
+  scissorsButton = Button(root, text="Scissors", command=partial(runRPSLS,options[2]), bg="red")
+  lizardButton = Button(root, text="Lizard", command=partial(runRPSLS,options[3]), bg="forestgreen")
+  spockButton = Button(root, text="Spock", command=partial(runRPSLS,options[4]), bg="royalblue")
 
-  players = [player1, player2]
+  rockButton.pack(side="top", fill="x")
+  paperButton.pack(side="top", fill="x")
+  scissorsButton.pack(side="top", fill="x")
+  lizardButton.pack(side="top", fill="x")
+  spockButton.pack(side="top", fill="x")
 
-  if player1[1] == player2[1]:
-    return "n/a"
-  elif abs(player1[1] - player2[1]) in (1,3):
-    return max(players)[0]
-  else:
-    return min(players)[0]
-
-def runRPSLS(decision):
-  player2 = choice(options)
-  player1 = decision
-  winningText = f"The winner was {winner(player1, player2)}! \n\nPlayer 1: {player1[0]} \nPlayer 2: {player2[0]}"
-  tkinter.messagebox.showinfo("Winner", winningText)
-
-rockButton = Button(root, text="Rock", command=partial(runRPSLS,options[0]), bg="grey", width=50)
-paperButton = Button(root, text="Paper", command=partial(runRPSLS,options[1]), bg="white", width=50)
-scissorsButton = Button(root, text="Scissors", command=partial(runRPSLS,options[2]), bg="red", width=50)
-lizardButton = Button(root, text="Lizard", command=partial(runRPSLS,options[3]), bg="forestgreen", width=50)
-spockButton = Button(root, text="Spock", command=partial(runRPSLS,options[4]), bg="royalblue", width=50)
-
-rockButton.pack(side="top")
-paperButton.pack(side="top")
-scissorsButton.pack(side="top")
-lizardButton.pack(side="top")
-spockButton.pack(side="top")
-
-root.mainloop()
+  root.mainloop()
