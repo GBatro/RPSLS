@@ -1,7 +1,7 @@
 # RPSLS
 Rock Paper Scissors Lizard Spock
 
-This is a program to play a variant of Rock Paper Scissors, adding two more options "Lizard" and "Spock" (as shown in the TV show "The Big Bang Theory"). This program uses a number variant of the options to *"calculate"* the winner rather than just going through many elif statements.
+This is a variant of Rock Paper Scissors introduced in the TV show "The Big Bang Theory", adding two more options: "Lizard" and "Spock". This program uses a number variant of the options to *"calculate"* the winner rather than just going through many elif statements.
 
 ### TO RUN
 - Download/unzip files
