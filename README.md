@@ -5,7 +5,7 @@ This is a program to play rock, paper, scissors, lizard, spock (as shown in the 
 
 TO RUN
 =======
-Download/unzip files
+Download/unzip files \n
 Open main.py
 
 TO PLAY
