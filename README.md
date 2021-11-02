@@ -1,7 +1,7 @@
 # RPSLS
-Rock Paper Scissors Lizard Spock *python
+Rock Paper Scissors Lizard Spock
 
-This is a program to play rock, paper, scissors, lizard, spock (as shown in the TV show "The Big Bang Theory"
+This is a program to play a variant of Rock Paper Scissors, adding two more options "Lizard" and "Spock" (as shown in the TV show "The Big Bang Theory"). This program uses a number variant of the options to *"calculate"* the winner rather than just going through many elif statements.
 
 ### TO RUN
 - Download/unzip files
