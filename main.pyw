@@ -15,8 +15,8 @@ class main:
   rockButton = Button(root, text="Rock", command=partial(runRPSLS,options[0]), bg="grey")
   paperButton = Button(root, text="Paper", command=partial(runRPSLS,options[1]), bg="white")
   scissorsButton = Button(root, text="Scissors", command=partial(runRPSLS,options[2]), bg="red")
-  lizardButton = Button(root, text="Lizard", command=partial(runRPSLS,options[3]), bg="forestgreen")
-  spockButton = Button(root, text="Spock", command=partial(runRPSLS,options[4]), bg="royalblue")
+  lizardButton = Button(root, text="Lizard", command=partial(runRPSLS,options[4]), bg="forestgreen")
+  spockButton = Button(root, text="Spock", command=partial(runRPSLS,options[3]), bg="royalblue")
 
   rockButton.pack(side="top", fill="x")
   paperButton.pack(side="top", fill="x")
